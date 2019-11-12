@@ -1,7 +1,9 @@
 # graphQL
 ## Running Node API's (Authors/Books and Person/Friendship)
 ### Prerequisites:
-- You should set the connection configs in /NodeJS/apis/books/config/config.json and /NodeJS/apis/persons/config/config.json
+- You should set the connection configs in:
+  - /NodeJS/apis/books/config/config.json 
+  - /NodeJS/apis/persons/config/config.json
 Enter nodeJS/ folder
 
 ```
