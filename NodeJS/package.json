@@ -9,7 +9,7 @@
   ],
   "author": "leovolpatto@gmail.com",
   "scripts": {
-    "prestart": "cd apis/books && npm install -y && cd ../person && npm install -y",
+    "prestart": "npm install && cd apis/books && npm install -y && cd ../person && npm install -y",
     "start": "concurrently \"cd apis/books && npm run start\" \"pwd && cd apis/person && npm run start\""
   },
   "license": "ISC",
