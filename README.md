@@ -1,5 +1,5 @@
 # graphQL
-## Running Node API's (Authors and Books)
+## Running Node API's (Authors/Books and Person/Friendship)
 Enter nodeJS/ folder
 
 ```
