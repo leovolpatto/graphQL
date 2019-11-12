@@ -1,0 +1,11 @@
+{
+  "name": "nodeJS_APIs",
+  "version": "1.0.0",
+  "description": "Simulation of an simple set of node distributed APIs",
+  "keywords": ["nodeJS", "rest", "node"],
+  "author": "leovolpatto@gmail.com",  
+  "scripts": {
+    "start": "cd apis/books && npm install -y && npm run start"
+  },
+  "license": "ISC"
+}
