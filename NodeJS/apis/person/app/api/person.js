@@ -15,7 +15,14 @@ module.exports = (app, db) => {
           idPerson: req.params.id
         }
       }).then((frds) => {
-        res.json(frds);
+        db.persons.findByPk(req.params.id).then(p => {
+          db.sequelize.query("SELECT * FROM persons WHERE id IN (:pips)", { replacements:{pips: frds.map(a => a.idFriendPerson)}, type: db.sequelize.QueryTypes.SELECT})
+          .then((alles) => {
+              var obj = p.dataValues;
+              obj["friends"] = alles;  
+              res.json(obj);
+            });
+        });        
       })
     );
   }
