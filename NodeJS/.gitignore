@@ -1,0 +1,6 @@
+apis/books/node_modules
+apis/books/package-lock.json
+package_lock.json
+./package-lock.json
+node_modules
+./node_modules/
