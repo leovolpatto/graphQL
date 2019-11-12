@@ -3,7 +3,7 @@
 Enter nodeJS/ folder
 
 ```
-$ cd nodeJS/
+$ cd NodeJS/
 ```
 Execute npm
 ```
