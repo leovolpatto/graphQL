@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "configs": {
+    "mysqlbin": "/usr/bin",
+    "db": "leo_graphql_books",
+    "pass": "123",
+    "user": "root"
+  },
   "scripts": {
     "start": "npm run init-db && npx nodemon --exec babel-node server.js",
     "sequelize-skeleton": "npx sequelize init:models; npx sequelize init:config",
-    "init-db": "cd /usr/bin && echo 'DROP DATABASE IF EXISTS leo_graphql_books; CREATE DATABASE leo_graphql_books CHARACTER SET utf8 COLLATE utf8_general_ci' | ./mysql -u root -p123 && cd -"
+    "init-db": "cd $npm_package_configs_mysqlbin && echo 'DROP DATABASE IF EXISTS $npm_package_configs_db; CREATE DATABASE $npm_package_configs_db CHARACTER SET utf8 COLLATE utf8_general_ci' | ./mysql -u $npm_package_configs_user -p$npm_package_configs_pass && cd -"
   },
   "keywords": [],
   "author": "",
