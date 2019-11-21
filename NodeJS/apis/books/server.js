@@ -14,7 +14,7 @@ app.use(express.static("app/public"));
 apiBook(app, db);
 apiAuthor(app, db);
 app.get("/", (req, res) => {
-  res.json("What are you looking for? Did you know that curiosity killed the cat?");
+  res.json("What are you looking for? Did you know that curiosity killed the cat? BTW, this is the Books API");
 });
 
 db.sequelize.sync().then(() => {
