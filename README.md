@@ -1,9 +1,12 @@
 # graphQL
 ## Running NodeJS silly API's (Authors/Books and Person/Friendship)
 ### Prerequisites:
-- You should set the connection configs in:
+- You need to set the connection configs in:
   - /NodeJS/apis/books/config/config.json 
   - /NodeJS/apis/persons/config/config.json
+- You also need to set init-db, pointing the cd command to the place where your mysql bin is, in:
+  - /NodeJS/apis/books/package.json 
+  - /NodeJS/apis/persons/package.json
   
 Enter nodeJS/ folder
 
