@@ -15,7 +15,7 @@
     "init-db": "cd $npm_package_configs_mysqlbin && echo 'DROP DATABASE IF EXISTS $npm_package_configs_db; CREATE DATABASE $npm_package_configs_db CHARACTER SET utf8 COLLATE utf8_general_ci' | ./mysql -u $npm_package_configs_user -p$npm_package_configs_pass && cd -"
   },
   "keywords": [],
-  "author": "",
+  "author": "leovolpatto@gmail.com",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
