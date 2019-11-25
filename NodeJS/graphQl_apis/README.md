@@ -1,4 +1,4 @@
-#Running this GraphQL API:
+# Running this GraphQL API:
 
 Open two terminals and firstly execute:
 
