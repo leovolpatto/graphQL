@@ -1,5 +1,3 @@
-const defaultPort = 5001;
-
 interface Environment {
   apollo: {
     introspection: boolean,
@@ -13,5 +11,5 @@ export const environment: Environment = {
     introspection: process.env.APOLLO_INTROSPECTION === 'true',
     playground: process.env.APOLLO_PLAYGROUND === 'true'
   },
-  port: process.env.PORT || defaultPort
+  port: process.env.PORT || (process.env.LISTENING_PORT || 5001)
 };
