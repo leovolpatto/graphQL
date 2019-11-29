@@ -8,7 +8,7 @@ class Person{
   public Friends: Array<Friend>;
 }
 
-class Friend extends Person{
+class Friend extends Person {
 
 }
 
@@ -33,10 +33,15 @@ export default {
         let p = new Person(41, "Jose", "m");
         p.Friends.push(new Friend(41, "Antonio", 'm'));
         p.Friends.push(new Friend(34, "Jacqueline Brazil", 'f'));
-        p.Friends.push(new Friend(101, "Rosinha", 'f'));
-
-        console.debug(p);
+        p.Friends.push(new Friend(101, "Dona Flor", 'f'));
         return p;
       }
     },
+
+    Mutation: {
+      createPerson: function(root : any, args: { name: String }, ctx : GraphQLExtensionStack) : Person {
+        return new Person(1, 'teste', 'm');
+      }
+    }
+
   };

@@ -1,4 +1,5 @@
 import { gql } from 'apollo-server';
+import { GraphQLScalarType, parseValue } from 'graphql';
 
 export default gql`
   type Query {
@@ -23,4 +24,9 @@ export default gql`
     age: Int
     Friends: [Friend]
   }
+
+  type Mutation{
+    createPerson(name: String) : Person!
+  }
+
 `;
